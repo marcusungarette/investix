@@ -30,4 +30,6 @@ public class AssessorController {
         var uri = uriBuilder.path("/medicos/{id}").buildAndExpand(assessor.getId()).toUri();
         return ResponseEntity.created(uri).body(new DadosDetalhamentoAssessorDTO(assessor));
     }
+
+
 }
